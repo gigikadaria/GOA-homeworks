@@ -45,9 +45,7 @@ left(120)
 forward(200)
 end_fill()
 
-# ---------------------------
 # draw windows (just blue squares) 
-# ---------------------------
 
 # left window
 penup()
