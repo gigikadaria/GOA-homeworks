@@ -1,0 +1,97 @@
+<html>
+<body>
+<head>
+<title>homework</title>
+</head>
+    <form action="#" method="get">
+<!-- text input: name გამოიყენება სერვერზე key-ისათვის -->
+<label>
+შენი სახელი:
+<input type="text" name="customer_name" placeholder="შენი სახელი" required>
+</label>
+
+
+<!-- radio buttons: name ერთია, value სხვადასხვა რათა სერვერს მიეწოდოს კონკრეტული არჩევანი -->
+<fieldset>
+<legend>ყავის ზომა:</legend>
+<label><input type="radio" name="size" value="small"> პატარა</label>
+<label><input type="radio" name="size" value="medium" checked> საშუალო</label>
+<label><input type="radio" name="size" value="large"> დიდი</label>
+</fieldset>
+
+
+<!-- checkbox: value და name ერთად მუშაობს. თუ ჩართულია, იგზავნება value. -->
+<label>
+<input type="checkbox" name="extra_shot" value="yes"> დამატებითი შოტი
+</label>
+
+
+<!-- select(dropdown): option-ს აქვს value; selected გამოიყენება მეორე ვარიანტზე სტარტად -->
+<label>
+ქალაქი  მიტანისთვის:
+<select name="pickup_city">
+<option value="batumi">ბათუმი</option>
+<option value="tbilisi" selected>თბილისი</option>
+<option value="kutaisi">ქუთაისი</option>
+</select>
+</label>
+
+
+<!-- multiple select -->
+<label>
+სასურველი ცხიმოვანი შაქრის ტიპი (multi-select):
+<select name="sweeteners" multiple size="3">
+<option value="sugar">შაქარი</option>
+<option value="honey">თაფლი</option>
+<option value="syrup">სიროფი</option>
+</select>
+</label>
+
+
+<label>
+შენიშვნა (textarea):
+<textarea name="note" rows="3" placeholder="მაგ: არ არის ლაქტოზა"></textarea>
+</label>
+
+
+<button type="submit">გააგზავნე შეკვეთა</button>
+</form>
+</section>
+
+
+
+
+<section class="card">
+<h2>ადგილი გაცნობისთვის (დასკვნითი სავარჯიშო)</h2>
+<p class="small">აი მეორე ფორმა - აქ ვარჯიშობთ dropdown-ებით და ა.შ.</p>
+
+
+<form action="#" method="post">
+<label>
+გსურთ თუ არა აიღოთ ბონუს-ფირფიტა?
+<select name="bonus_coupon">
+<option value="no" selected>არა, მადლობა</option>
+<option value="yes">კი, მინდა</option>
+</select>
+</label>
+
+
+<label>
+სასურველი გადახდის მეთოდი:
+<select name="payment">
+<option value="card">ბარათი</option>
+<option value="cash">ნაღდი</option>
+<option value="online">ონლაინ</option>
+</select>
+</label>
+
+
+<div class="row">
+<button type="submit">შეცვლა და შენახვა</button>
+<button type="reset">გასუფთავება</button>
+</div>
+</form>
+</section>
+
+</body>
+</html>
