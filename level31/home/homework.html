@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>გაერთიანებული დავალება</title>
+
+    <!--
+    INLINE CSS:
+    - იწერება პირდაპირ HTML ელემენტში style ატრიბუტის საშუალებით ის მართავს მხოლოდ იმ ელემენტს რასაც გაეწერა
+
+    INTERNAL CSS:
+    - იწერება <style> თეგში <head>-ის შიგნით  უფრო სწრაფია და ყველაფერს ერთვება
+    -->
+
+    <style>
+        body {
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #222;
+            color: white
+            text-align: center;
+        }
+
+        h1 {
+            color: purple;
+            background-color: lightblue;
+            text-align: center;
+            border: 3px solid black;
+            border-radius: 12px;
+        }
+
+        .site-p {
+            font-size: 18px;
+            background-color: white;
+            border-radius: 10px;
+            border: dotted;
+        }
+
+        button {
+            background-color: blue;
+            color: rgb(16, 16, 30);
+            font-size: 16px;
+        }
+    </style>
+
+</head>
+<body>
+
+<header>
+    <h1>ჩემი ვებ-საიტი</h1>
+</header>
+
+<h1>პირველი სათაური</h1>
+<h1>მეორე სათაური</h1>
+<h1>მესამე სათაური</h1>
+
+<p style="color: red; font-size: 18px; background-color: yellow;  border: 2px solid black;">
+    ეს არის პირველი პარაგრაფი (inline css)
+</p>
+
+<p style="color: blue; font-size: 20px; background-color: lightgray; border-radius: 10px;">
+    ეს არის მეორე პარაგრაფი (inline css)
+</p>
+
+<p style="color: green;  text-align: center; border: 3px dashed green;">
+    ეს არის მესამე პარაგრაფი (inline css)
+</p>
+
+<p class="site-p">
+    ეს არის ტექსტი ვებ-საიტიდან (internal css).
+</p>
+
+<button>დაჭერა</button>
+
+</body>
+</html>
