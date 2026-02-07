@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+<meta charset="UTF-8">
+<title>CSS დავალება</title>
+
+<style>
+
+    /* ---------------------------------------
+    2) Style Inheritance (სტილის მემკვიდრეობა)
+
+    Style inheritance ნიშნავს, რომ შვილ ელემენტებს
+    შეუძლიათ მიიღონ სტილი მშობელი ელემენტიდან.
+
+    მაგალითად თუ div-ს მივანიჭებთ ტექსტის ფერს,
+    შიგნით არსებული ტექსტებიც იმავე ფერს მიიღებენ
+    (თუ მათ ცალკე არ მივანიჭებთ სხვა სტილს).
+    -----------------------------------> */
+
+
+    /* მაგალითი 1 */
+    .inherit-example1 {
+        color: blue; 
+        font-size: 20px;
+    }
+
+  
+    .inherit-example2 {
+        text-align: center;
+        color: darkgreen;
+    }
+
+ 
+
+    .routine {
+        border: 3px solid black;
+        padding: 20px;
+        text-align: center;
+        color: white;
+
+        /* linear gradient background */
+        background: linear-gradient(to right, purple, blue);
+    }
+
+
+
+    h1 i {
+        color: red;
+        background-color: yellow;
+        padding: 3px;
+    }
+
+</style>
+</head>
+<body>
+
+
+
+
+<div class="inherit-example1">
+    <p>ეს ტექსტი მიიღებს ლურჯ ფერს და 20px ზომას div-დან</p>
+</div>
+
+<div class="inherit-example2">
+    <h2>სათაური იღებს მწვანე ფერს</h2>
+    <span>ეს ტექსტიც მიიღებს იგივე სტილს</span>
+</div>
+
+
+
+
+
+<div class="routine">
+    <h2>ჩემი დღის რუტინა</h2>
+
+    <ol>
+        <li>გაღვიძება</li>
+        <li>საუზმე</li>
+        <li>სწავლა</li>
+        <li>დასვენება</li>
+        <li>ვარჯიში</li>
+        <li>ფილმის ყურება</li>
+        <li>ძილი</li>
+    </ol>
+</div>
+
+
+
+
+<h1>
+    ეს არის <i>მნიშვნელოვანი</i> სათაური
+</h1>
+
+
+</body>
+</html>
