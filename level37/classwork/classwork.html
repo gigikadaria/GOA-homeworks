@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectors Practice</title>
+
+    <style>
+        /*
+        class selector გამოიყენება მაშინ, როცა გვინდა რამდენიმე ელემენტს
+        ერთნაირი სტილი მივანიჭოთ. იწერება წერტილით (.)
+        */
+
+        /*
+        id selector გამოიყენება უნიკალური ელემენტის გასასტილებლად.
+        ერთ ელემენტს უნდა ჰქონდეს მხოლოდ ერთი id. იწერება # სიმბოლოთი
+        */
+
+        /*
+        განსხვავება:
+        class შეიძლება ჰქონდეს ბევრ ელემენტს
+        id არის უნიკალური და უფრო მაღალი პრიორიტეტი აქვს
+        */
+
+       
+        h1 {
+            color: white;
+            background-color: gray;
+        }
+
+        .group {
+            color: black;
+            background-color: lightblue;
+        }
+
+        #unique {
+            color: white;
+            background-color: crimson;
+        }
+
+      
+        div {
+            background-color: lightgray;
+        }
+
+      
+        .box {
+            background-color: lightgreen;
+        }
+
+        #special {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="group">H1 - 1</h1>
+    <h1 class="group">H1 - 2</h1>
+    <h1 class="group">H1 - 3</h1>
+    <h1 class="group">H1 - 4</h1>
+
+    <h1 id="unique">H1 - 5</h1>
+
+    <h1>H1 - 6</h1>
+
+    <div>DIV 1 - tag selector</div>
+    <div class="box">DIV 2 - class selector</div>
+    <div id="special">DIV 3 - id selector</div>
+
+</body>
+</html>

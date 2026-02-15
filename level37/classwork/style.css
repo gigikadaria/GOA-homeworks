@@ -1,0 +1,45 @@
+/*
+ID SELECTOR (#)
+- უნიკალური ელემენტისთვის
+- არ მეორდება ერთ გვერდზე
+- უფრო მაღალი პრიორიტეტი
+
+CLASS SELECTOR (.)
+- შეიძლება ბევრ ელემენტზე
+- ჯგუფური გასტილვა
+*/
+
+/* TAG SELECTOR — ყველა button */
+button {
+  color: white;
+  background-color: gray;
+  border: none;
+}
+
+/* CLASS SELECTOR — პირველი 3 button */
+.group-btn {
+  background-color: blue;
+  color: yellow;
+}
+
+/* ID SELECTOR — მხოლოდ 4-ე button */
+#unique-btn {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+}
+
+/* class selector პრაქტიკა */
+.title {
+  color: darkgreen;
+}
+
+.text {
+  color: purple;
+}
+
+/* id selector პრაქტიკა */
+#special-box {
+  background-color: lightblue;
+  color: black;
+}
