@@ -1,0 +1,47 @@
+.p1 {
+    text-align: left;
+    text-decoration: underline;
+    color: white;
+    background-color: blue;
+    font-size: 14px;
+}
+
+.p2 {
+    text-align: right;
+    text-decoration: line-through;
+    color: black;
+    background-color: yellow;
+    font-size: 16px;
+}
+
+.p3 {
+    text-align: center;
+    text-decoration: overline;
+    color: white;
+    background-color: green;
+    font-size: 18px;
+}
+
+.p4 {
+    text-align: justify;
+    text-decoration: none;
+    color: red;
+    background-color: lightgray;
+    font-size: 20px;
+}
+
+.p5 {
+    text-align: left;
+    text-decoration: underline;
+    color: purple;
+    background-color: pink;
+    font-size: 22px;
+}
+
+.p6 {
+    text-align: center;
+    text-decoration: line-through;
+    color: orange;
+    background-color: black;
+    font-size: 24px;
+}

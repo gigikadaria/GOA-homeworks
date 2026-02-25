@@ -1,0 +1,68 @@
+        /* 
+        2) Dimensions ნიშნავს ელემენტის ზომებს (სიგანე და სიმაღლე)
+
+        ძირითადი თვისებები:
+        width  - სიგანე
+        height - სიმაღლე
+
+        ერთეულები:
+        px  - პიქსელი
+        %   - პროცენტი
+        em  - დამოკიდებულია მშობელ ელემენტზე
+        rem - დამოკიდებულია html font-size-ზე
+        vw  - ეკრანის სიგანის პროცენტი
+        vh  - ეკრანის სიმაღლის პროცენტი
+        */
+
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial;
+        }
+
+        .box1 {
+            background-color: rgb(255, 99, 71);
+            width: 200px;
+            height: 150px;
+        }
+
+        .box2 {
+            background-color: rgb(60, 179, 113);
+            width: 300px;
+            height: 120px;
+        }
+
+        .box3 {
+            background-color: rgb(65, 105, 225);
+            width: 250px;
+            height: 180px;
+        }
+
+
+        h1 {
+            color: #8A2BE2;
+            font-size: 40px;
+            text-transform: uppercase;
+        }
+
+
+        .rgb1 { color: rgb(255,0,0); }
+        .rgb2 { color: rgb(0,128,0); }
+        .rgb3 { color: rgb(0,0,255); }
+        .rgb4 { color: rgb(255,165,0); }
+        .rgb5 { color: rgb(128,0,128); }
+
+
+
+        .hex1 { color: #FF1493; }
+        .hex2 { color: #00CED1; }
+        .hex3 { color: #FFD700; }
+        .hex4 { color: #4B0082; }
+        .hex5 { color: #2F4F4F; }
+
+   
+
+        .section {
+            background-color: white;
+            width: 80%;
+            margin: auto;
+        }

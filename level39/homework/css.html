@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Lesson</title>
+
+    <style>
+
+        /* 1) TAG SELECTOR */
+        /* ეს შეეხება ყველა <p> თეგს გვერდზე */
+        p {
+            color: red; 
+            /* ყველა პარაგრაფის ტექსტი გახდება წითელი */
+        }
+
+        /* 2) ID SELECTOR */
+        /* # გამოიყენება id-სთვის */
+        /* იმუშავებს მხოლოდ იმ ელემენტზე, რომელსაც აქვს id="kindzi" */
+        #kindzi {
+            color: blue; 
+            /* ტექსტი გახდება ლურჯი */
+
+            text-align: center; 
+            /* ტექსტი განლაგდება ცენტრში */
+        }
+
+        /* 3) CLASS SELECTOR */
+        /* . გამოიყენება class-სთვის */
+        /* იმუშავებს ყველა ელემენტზე, რომელსაც აქვს class="css" */
+        .css {
+            color: green; 
+            /* ტექსტი გახდება მწვანე */
+
+            text-align: right; 
+            /* ტექსტი განლაგდება მარჯვენა მხარეს */
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>CSS Examples</h1>
+
+    <p>This is normal paragraph (Tag Selector makes it red).</p>
+
+    <p id="kindzi">This paragraph uses ID selector.</p>
+
+    <p class="css">This paragraph uses Class selector.</p>
+
+    <p class="css">This is another class example.</p>
+
+</body>
+</html>
+/* color - განსაზღვრავს ტექსტის ფერს */
+p {
+    color: red; 
+    /* აქ ტექსტი იქნება წითელი */
+}
+
+/* HEX ფერის კოდი */
+/* HEX ფორმატი იწერება ასე: #RRGGBB */
+/* RR = წითელი, GG = მწვანე, BB = ლურჯი */
+/* მნიშვნელობები არის 00-დან FF-მდე */
+h1 {
+    color: #0000FF; 
+    /* ლურჯი ფერი hex კოდით */
+}
+
+/* RGB ფერის სისტემა */
+/* rgb ნიშნავს Red, Green, Blue */
+/* მნიშვნელობები იწერება 0-დან 255-მდე */
+h2 {
+    color: rgb(0, 255, 0); 
+    /* მწვანე ფერი rgb ფორმატით */
+}
+
+
+/* background-color - აძლევს ელემენტს ფონის ფერს */
+body {
+    background-color: lightgray; 
+    /* გვერდის ფონი გახდება ღია ნაცრისფერი */
+}
