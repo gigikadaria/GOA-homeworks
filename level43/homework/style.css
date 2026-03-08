@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f1faee;
+}
+
+header{
+background:#1d3557;
+color:white;
+text-align:center;
+}
+
+nav{
+background:#457b9d;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+}
+
+nav li{
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#a8dadc;
+}
+
+main{
+display:grid;
+gap:20px;
+}
+
+.sport{
+background:white;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.sport h2{
+color:#1d3557;
+}
+
+footer{
+background:#1d3557;
+color:white;
+text-align:center;
+}

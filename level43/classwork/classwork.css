@@ -1,0 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+
+#para1 {
+    text-decoration: underline;
+}
+
+
+#para2 {
+    text-transform: uppercase;
+}
+
+
+#para3 {
+    text-shadow: 3px 3px 5px purple; 
+}
+
+
+#mainTitle {
+    text-decoration: line-through;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 6px blue;
+}
+
+
+#customFont {
+    font-family: 'Finger Paint', cursive;
+    font-size: 22px;
+}
