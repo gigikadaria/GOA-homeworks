@@ -1,0 +1,65 @@
+body {
+    background-color: green;
+    font-family: Arial;
+}
+
+/* form box */
+.box {
+    width: 350px;
+    background-color: white;
+
+    margin: auto;
+    margin-top: 80px;
+
+    padding: 20px;
+    border-radius: 6px;
+}
+
+
+h2 {
+    margin-bottom: 5px;
+}
+
+
+.sub {
+    color: gray;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+
+textarea {
+    height: 100px;
+}
+
+
+button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+
+    background-color: green;
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+}
+
+
+.footer {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.footer a {
+    color: blue;
+}

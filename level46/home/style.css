@@ -1,0 +1,28 @@
+body {
+    background-color: white;
+    text-align: center;
+    font-family: Arial;
+}
+
+.title {
+    color: green;
+}
+
+.subtitle {
+    margin-bottom: 20px;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid grey;
+    padding: 10px 20px;
+}
+
+th {
+    background-color: white;
+}

@@ -1,0 +1,31 @@
+body{
+font-family:Arial;
+}
+
+.blueList{
+list-style:none;
+width:300px;
+}
+
+.blueList li{
+height:40px;
+line-height:40px;
+background:#d9d9d9;
+border-bottom:6px solid white;
+}
+
+.circle{
+display:inline-block;
+width:36px;
+height:36px;
+line-height:36px;
+text-align:center;
+background:#7ec7e8;
+color:white;
+border-radius:50px;
+font-weight:bold;
+}
+
+.sub{
+border-left:40px solid white;
+}

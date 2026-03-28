@@ -1,0 +1,45 @@
+body{
+font-family: Arial;
+background-color:white;
+}
+
+table{
+width:600px;
+border-collapse:collapse;
+border-radius:10px;
+box-shadow:0px 10px 25px rgba(0, 0, 0, 0.1);
+background-color:white;
+}
+
+thead{
+background-color:#118a6f;
+color:white;
+}
+
+th{
+height:60px;
+text-align:left;
+font-size:18px;
+}
+
+td{
+height:60px;
+font-size:18px;
+}
+
+tr{
+border-bottom:1px solid #dcdcdc;
+}
+
+tbody tr:last-child{
+border-bottom:3px solid #118a6f;
+}
+
+.highlight{
+background-color:#eef5f3;
+font-weight:bold;
+}
+
+.highlight td{
+color:#13de21;
+}
