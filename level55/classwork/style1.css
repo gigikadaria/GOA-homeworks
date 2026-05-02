@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.parent-container {
+    display: flex;
+    width: 600px;
+    padding: 15px;
+    border: 3px solid grey;
+    margin: 50px auto;
+}
+
+.child {
+    height: 80px;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px; 
+}
+
+.first {
+    background-color: #e74c3c;
+    flex-shrink: 1; 
+}
+
+.second {
+    background-color: #2ecc71;
+    flex-shrink: 1; 
+}
+
+.third {
+    background-color: #9b59b6;
+    width: 300px;   
+    flex-shrink: 0; 
+}
+
+/* 
+flex-shrink გამოიყენება ჩაილდ ელემენტების დაპატარავებაში თუ ისინი იკავებენ იმდენ ადგილს რომ ყველა მათგანი არ დაეტევა
+პირველმა და მეორე შევიწროვდა რადგან მათ 1 ეწერათ მაგრამ მესამე არ შევიწროვდა იმიტომ რომ მას 0 უწერია და მან შეინარჩუნა მისი ზომა
+*/

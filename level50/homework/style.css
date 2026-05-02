@@ -1,0 +1,79 @@
+/* 
+Flexbox არის CSS-ის ფუნქცია, რომელიც გვეხმარება ელემენტები
+მარტივად დავალაგოთ (რიგში ან სვეტში).
+
+გამოიყენება:
+ცენტრში დასაყენებლად
+ელემენტების გასწორებისთვის
+სივრცის გასანაწილებლად
+*/
+
+
+/* flex-direction
+გვეუბნება ელემენტები როგორ დალაგდეს
+
+row - x ღერძზე (ჰორიზონტალურად)
+column - y ღერძზე (ვერტიკალურად)
+*/
+
+
+/* justify-content
+ალაგებს ელემენტებს x ღერძზე
+
+center ალაგებს ცენტრში
+flex-start ალაგებს დასაწყისში
+flex-end ალაგებს ბოლოში
+space-between ალაგებს დაშორება ელემენტებს შორის
+*/
+
+
+/* align-items
+ალაგებს ელემენტებს y ღერძზე
+
+center ალაგებს ცენტრში
+flex-start ალაგებს ზედა მხარეს
+flex-end ალაგებს ქვედა მხარეს
+*/
+
+
+/* gap
+ადგენს დაშორებას ელემენტებს შორის
+
+gap: 10px;
+*/
+
+.container {
+    display: flex;
+    border: 2px dashed gray;
+    width: 500px;
+    margin: 20px auto;
+}
+
+.box {
+    background: #4a7bd1;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    margin: 5px;
+}
+
+
+.row {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+.column {
+    flex-direction: column;
+    height: 200px;
+}
+
+
+.utilities {
+    flex-direction: column;
+}
+
+.util1 { background: green; }
+.util2 { background: blue; }
+.util3 { background: orange; }

@@ -1,0 +1,39 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+.parent-container {
+    display: flex;
+    background-color: white;
+    border: 2px dashed grey;
+}
+.child-box {
+    width: 200px;
+    height: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.first-child {
+    background-color: cyan;
+    flex-grow: 1;
+}
+.second-child {
+    background-color: orange;
+    flex-grow: 3;
+}
+
+/* 
+  როდესაც ჩვენ გავუწერთ flex-grow-ს ჩვენ შვილ ელემენტებს ვეუბნებით რომ დაიკავონ თავისუფალი ადგილი რაც არის მშობელ ელემენტში მაგალითად თუ პირველს უწერია1
+  და მეორეს უწერია 3, მეორე ელემენტი დაიკავებს 3ჯერ მეტ ადგილს ვიდრე 1 ელემენტი
+   
+   ამიტომ, საიტზე მეორე ბლოკი გაცილებით დიდი გამოჩნდა. ის კი არ გახდა პირველზე 3-ჯერ დიდი, 
+   არამედ მან თავისუფალი სივრციდან 3-ჯერ მეტი ადგილი მიიღო
+   
+   მოკლედ:flex-grow  ელემენტებს ეუბნება ბოლომდე შეავსონ მშობლის სიგანე მათთვის 
+   მიცემული რიცვის მიხედვით.
+*/
