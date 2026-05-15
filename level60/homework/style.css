@@ -1,0 +1,50 @@
+    body{
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      padding: 50px;
+    }
+
+    div{
+      width: 150px;
+      height: 150px;
+      background-color: royalblue;
+      transition: 1s;
+    }
+
+
+    .div1:hover{
+      transform: translate(200px, 150px);
+    }
+
+
+    .div2{
+      background-color: crimson;
+    }
+
+    .div2:hover{
+      transform: scale(2.5);
+    }
+
+
+    .div3{
+      background-color: seagreen;
+    }
+
+    .div3:hover{
+      transform: skew(30deg, 45deg);
+    }
+
+
+    .div4{
+      background-color: orange;
+    }
+
+    .div4:hover{
+      transform: rotate(125deg);
+    }
+
+/* transform არის css-ის თვისება რომელიც საშვალებას გვაძლევს შევცვალოთ ელემენტის სახე,მდებარეობა,ფორმა */
+/* translateX() - გადაადგილებს ელემენტს X ღერძზე.
+translateY() - გადაადგილებს ელემენტს Y ღერძზე.
+translate() - translateX()-ის და translateY()-ის კომბინირებული ვერსია. */

@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width:500px;
+    height:500px;
+    background:blue;
+}
+
+.circle{
+    width:150px;
+    height:150px;
+    background:tan;
+    border-radius:50%;
+    transition:5s ease-in;
+}
+
+.box:hover .circle{
+    transform:translateX(345px);
+}
+
+/* 
+transition - უფლებას გვაძლევს რომ დავამატოთ დრო ანიმაციებს როდესაც ტრანსფორმს ან ჰოვერს გამოვიყენებთ
+transition-duration -შეგვიძლია ხანგძლივობის დრო დავუმატოთ ჩვენტს ტრანზიციას
+transition-delay - შეგვიძლია შევაყოვნოთ ჩვენი ტრანზიცია სანამ ის შესრულდება
+transition-property - შეგვიძლია ტრანზიცია მხოლოდ ერთ ან რამოდენიმე ელემენტს დავადოთ
+transition-timing-function - შეგვიძლია ტრანზიციის სიჩქარე დროს განმავლობაში ვაკონტროლოთ
+
+*/

@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 180px);
+  grid-template-rows: repeat(2, 130px);
+  gap: 20px;
+}
+
+.box {
+  background-color: #444;
+  color: white;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+/*
+
+- რიგებად (rows)
+- სვეტებად (columns)
+
+ვიყენებთ მას ფლექსის მაგივრად როდესაც ბევრი რამე უნდა განვალაგოთ 
+*/
+
+
+/*
+display: grid;
+აძლევს ელემენტს grid-ის ქცევას
+
+grid-template-columns
+განსაზღვრავს სვეტების რაოდენობას და ზომას
+მაგალითები:
+100px 100px 100px (ფიქსირებული სვეტები)
+1fr 2fr 1fr (პროპორციული განაწილება)
+
+grid-template-rows
+განსაზღვრავს რიგების სიმაღლეს
+მაგალითები:
+100px 200px
+auto 1fr
+
+gap
+დაშორება ელემენტებს შორის
+
+column-gap
+მხოლოდ სვეტებს შორის დაშორება
+
+row-gap
+მხოლოდ რიგებს შორის დაშორება
+
+justify-items
+ელემენტების განლაგება ჰორიზონტალურად უჯრაში
+მნიშვნელობები:
+- start
+- center
+- end
+
+align-items
+-> ელემენტების განლაგება ვერტიკალურად უჯრაში
+მნიშვნელობები:
+- start
+- center
+- end
+
+*/
+/*
+ფორმულა:
+1fr = მთლიანი სიმაღლე / რიგების რაოდენობა
+
+1) height = 1000px, rows = 2
+1fr = 1000 / 2 = 500px
+
+2) height = 1900px, rows = 10
+1fr = 1900 / 10 = 190px
+
+3) height = 300px, rows = 9
+1fr = 300 / 9 = 33.33px
+*/
