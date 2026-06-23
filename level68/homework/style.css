@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: #3b6ce6; 
+    border: 4px solid #d3d3d3;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center; 
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    background-color: #dfba83;
+    border-radius: 50%;
+    position: absolute;
+    left: 25px;
+    animation: moveHorizontal 3s ease-in-out infinite alternate;
+}
+
+@keyframes moveHorizontal {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(300px);
+    }
+}

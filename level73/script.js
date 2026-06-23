@@ -1,0 +1,26 @@
+console.log("Hello");
+console.log("Georgia");
+console.log("JavaScript");
+console.log("Cat");
+console.log("Programming");
+console.log(10);
+console.log(25);
+console.log(3.14);
+console.log(1000);
+console.log(-7);
+console.log(true);
+console.log(false);
+console.log(10 > 5);
+console.log(7 === 7);
+console.log(3 < 1);
+
+console.log(5 + 3);
+console.log(10 + 20);
+console.log(15 - 5);
+console.log(100 - 30);
+console.log(4 * 6);
+console.log(7 * 8);
+console.log(20 / 4);
+console.log(81 / 9);
+console.log(10 % 3);
+console.log(25 % 4);

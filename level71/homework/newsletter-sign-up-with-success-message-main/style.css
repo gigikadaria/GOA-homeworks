@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: hsl(235, 18%, 26%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-section {
+  background: url('./assets/images/illustration-sign-up-mobile.svg') no-repeat center center/cover;
+  width: 100%;
+  height: 284px;
+}
+
+.content-section {
+  padding: 40px 24px;
+}
+
+h1 {
+  color: hsl(234, 29%, 20%);
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+p {
+  color: hsl(235, 18%, 26%);
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.features-list {
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+.features-list li {
+  color: hsl(235, 18%, 26%);
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  padding-left: 36px;
+  background: url('./assets/images/icon-list.svg') no-repeat left center;
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+label {
+  color: hsl(234, 29%, 20%);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.error-text {
+  color: hsl(4, 100%, 67%);
+  font-size: 12px;
+  font-weight: 700;
+  display: none;
+}
+
+input {
+  width: 100%;
+  padding: 16px 24px;
+  border: 1px solid hsl(231, 7%, 60%);
+  border-radius: 8px;
+  font-size: 16px;
+  color: hsl(234, 29%, 20%);
+  outline: none;
+  margin-bottom: 24px;
+}
+
+button {
+  width: 100%;
+  padding: 16px;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(90deg, hsl(4, 100%, 67%), hsl(13, 100%, 62%));
+  box-shadow: 0 16px 32px rgba(255, 97, 85, 50%);
+}
+
+@media (min-width: 900px) {
+.card {
+    flex-direction: row-reverse;
+    width: 928px;
+    min-height: auto;
+    border-radius: 36px;
+    padding: 24px;
+    align-items: center;
+  }
+
+.image-section {
+    background: url('./assets/images/illustration-sign-up-desktop.svg') no-repeat center center/cover;
+    width: 400px;
+    height: 593px;
+    border-radius: 16px;
+  }
+
+.content-section {
+    width: 528px;
+    padding: 40px 64px 40px 40px;
+  }
+
+h1 {
+    font-size: 56px;
+  }
+}

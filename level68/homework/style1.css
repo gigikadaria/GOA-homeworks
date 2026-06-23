@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: #3b6ce6;
+    border: 4px solid #d3d3d3;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    background-color: #dfba83;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    animation: moveVertical 3s ease-in-out infinite alternate;
+}
+
+@keyframes moveVertical {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(300px);
+    }
+}

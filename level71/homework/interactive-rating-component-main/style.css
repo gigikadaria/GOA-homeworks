@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  background-color: hsl(216, 12%, 8%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.rating-card {
+  background: linear-gradient(180deg, hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+  width: 100%;
+  max-width: 412px;
+  border-radius: 15px;
+  padding: 24px;
+}
+
+.icon-star-container {
+  background-color: hsl(216, 12%, 24%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+p {
+  color: hsl(217, 12%, 63%);
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 24px;
+}
+
+.rating-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.rating-group input {
+  display: none;
+}
+
+.rating-group label {
+  width: 42px;
+  height: 42px;
+  background-color: hsl(216, 12%, 24%);
+  color: hsl(217, 12%, 63%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.rating-group label:hover {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+
+.rating-group input:checked + label {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+@media (min-width: 900px) {
+.rating-card {
+    padding: 32px;
+    border-radius: 30px;
+}
+
+.icon-star-container {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 32px;
+  }
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+p {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 32px;
+  }
+
+.rating-group {
+    margin-bottom: 32px;
+  }
+
+.rating-group label {
+    width: 51px;
+    height: 51px;
+    font-size: 16px;
+  }
+}

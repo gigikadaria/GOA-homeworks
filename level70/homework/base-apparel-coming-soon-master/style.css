@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  min-height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  min-height: 100vh;
+}
+
+.content-side {
+  padding: 30px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 30px;
+}
+
+.hero-mobile img {
+  width: 100%;
+  display: block;
+  margin: 0 -32px 40px -32px;
+  width: calc(100% + 64px);
+}
+
+.image-side {
+  display: none;
+}
+
+.text-content {
+  text-align: center;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: hsl(0, 6%, 24%);
+  font-weight: 600;
+  line-height: 44px;
+  margin-bottom: 20px;
+}
+
+.light-text {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+}
+
+p {
+  color: hsl(0, 36%, 70%);
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  padding: 16px 80px 16px 24px;
+  border: 1px solid hsl(0, 36%, 70%);
+  border-radius: 30px;
+  background: transparent;
+  font-family: inherit;
+  font-size: 14px;
+  color: hsl(0, 6%, 24%);
+  outline: none;
+}
+
+input::placeholder {
+  color: hsl(0, 36%, 70%);
+  opacity: 60%;
+}
+
+input:focus:invalid {
+  border: 2px solid hsl(0, 93%, 68%);
+}
+
+button {
+  position: absolute;
+  right: -1px;
+  height: 100%;
+  width: 64px;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 10%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  opacity: 80%;
+  box-shadow: 0 10px 20px rgba(249, 148, 148, 40%);
+}
+
+@media (min-width: 900px) {
+.container {
+    grid-template-columns: 58% 42%;
+  }
+
+.content-side {
+    padding: 70px 140px;
+  }
+
+.logo {
+    width: 158px;
+    margin-bottom: 130px;
+  }
+
+.hero-mobile {
+    display: none;
+  }
+
+.image-side {
+    display: block;
+    background: url('./images/hero-desktop.jpg') no-repeat center center/cover;
+  }
+
+.text-content {
+    text-align: left;
+    margin: 0;
+    max-width: 445px;
+  }
+
+h1 {
+    font-size: 64px;
+    letter-spacing: 16px;
+    line-height: 70px;
+    margin-bottom: 25px;
+  }
+
+p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 40px;
+  }
+
+button {
+    width: 100px;
+  }
+}
