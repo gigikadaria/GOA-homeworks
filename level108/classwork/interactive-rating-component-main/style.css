@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system,sans-serif;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    padding: 16px;
+    color: hsl(217, 12%, 63%);
+}
+.card-container {
+    background-color: hsl(213, 19%, 18%);
+    width: 100%;
+    max-width: 412px;
+    padding: 32px;
+    border-radius: 30px;
+    display: grid;
+    gap: 24px;
+}
+.star-icon {
+    background-color: hsl(215, 24%, 22%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.description {
+    font-size: 17px;
+    line-height: 22px;
+}
+.rating-numbers {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+.circle-label {
+    background-color: hsl(215, 24%, 22%);
+    color:hsl(217, 12%, 63%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+.circle-label input[type='radio'] {
+    display: none;
+}
+.circle-label:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 100%, 100%);
+}
+.circle-label:has(input[type="radio"]:checked) {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 100%, 100%);
+}
+
+button[type="submit"] {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 24px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-transform: uppercase;
+}
+button[type="submit"]:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+.error-msg {
+    color: hsl(0, 75%, 60%);
+    font-size: 12px;
+    text-align: center;
+}
+
+.thank-you-state {
+    display: grid;
+    gap: 24px;
+    text-align: center;
+    place-items: center;
+}
+.result-badge {
+    background-color: hsl(215, 24%, 22%);
+    color: hsl(25, 97%, 53%);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.thank-you-state h2{
+    color: white;
+    font-size: 24px;
+}
+
+.center {
+    text-align: center;
+}
+
+#button {
+    width: 100%;
+    color: black;
+}
